@@ -1,9 +1,7 @@
 name: Practice example-1
-
 on: push
-
 jobs:
-  TestingPractise-1:
+  Deployingthecode:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
