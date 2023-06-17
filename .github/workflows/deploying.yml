@@ -1,4 +1,5 @@
 name: Practice example-1
+
 on: push
 
 jobs:
