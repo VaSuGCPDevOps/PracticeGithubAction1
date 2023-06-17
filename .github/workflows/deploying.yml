@@ -19,7 +19,7 @@ jobs:
       - name: Building
         run: npm run build
   Deploying:
-    needs: TestingPractise-1
+    needs: Deployingthecode
     runs-on: ubuntu-latest
     steps:
       - name: Deploying
