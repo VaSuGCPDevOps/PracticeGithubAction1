@@ -14,16 +14,19 @@ jobs:
       - name: Testing the project
         run: npm test
   LintingPractise-1:
+    needs: TestingPractise-1
     runs-on: ubuntu-latest
     steps:            
       - name: Linting the project
         uses: wearerequired/lint-action@v2
   Building:
+    needs: LintingPractise-1
     runs-on: ubuntu-latest
     steps:
       - name: Building
         run: npm run build
   Deploying:
+    needs: Building
     runs-on: ubuntu-latest
     steps:
       - name: Deploying
