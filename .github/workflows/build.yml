@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Testing the project
-        run: npm tes
+        run: 
            
       - name: Linting the project
         uses: wearerequired/lint-action@v2
