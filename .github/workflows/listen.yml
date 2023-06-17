@@ -1,0 +1,10 @@
+name: listen event
+on: 
+  issues:
+    types: [opened, reopened]
+jobs:
+  listenEvent:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Context
+      run: echo ${{toJSON(job)}}
