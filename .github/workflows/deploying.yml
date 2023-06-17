@@ -14,7 +14,7 @@ jobs:
         run: npm test
            
       - name: Linting the project
-        uses: npm run lint
+        run: npm run lint
 
       - name: Building
         run: npm run build
