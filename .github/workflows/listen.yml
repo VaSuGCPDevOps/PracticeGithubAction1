@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - name: Context
-      run: echo ${{toJSON(job)}}
+      run: echo ${{toJSON(github.event)}}

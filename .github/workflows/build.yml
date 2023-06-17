@@ -15,7 +15,7 @@ jobs:
         run: npm test
            
       - name: Linting the project
-        uses: wearerequired/lint-action@v2
+        uses: npm run lint
 
       - name: Building
         run: npm run build
